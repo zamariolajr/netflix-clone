@@ -1,0 +1,107 @@
+:root {
+    --fonts-color: #e50914;
+    --base-color: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* evita que o conteúdo rompa os limites do container*/
+    box-sizing: border-box;
+}
+
+
+/* base elements*/
+
+body {
+    background: var(--base-color);
+    font-family: 'Fira Code', monospace;
+    color: whitesmoke;
+}
+
+header .wrapper {
+    display: flex;
+    /*Comportamento default*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 0.3125rem;
+    color: var(--fonts-color);
+    font-size: 2.5rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 0.625rem;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+
+/*jumbotron*/
+
+.jumbotron {
+    font-size: 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('/img/billions-fundo.jpg');
+    height: 35rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jumbotron .description {
+    margin-top: 0.625rem;
+    margin-bottom: 2.5rem;
+}
+
+.jumbotron .title {
+    margin-top: 15%;
+    font-size: 2.5rem;
+    font-family: Helvetica, sans-serif;
+}
+
+.jumbotron .wrapper {
+    width: 70%;
+}
+
+.wrapper {
+    margin-left: 20px;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: whitesmoke;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--base-color);
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel {
+    margin-top: 10px;
+}
